@@ -3,7 +3,9 @@ import { FeedbackResult, FeedbackStatistics } from './Feedback.styled';
 
 const Statistics = ({ totalFeedbacks, positivePercentage, up, zero, down }) => (
   <div>
-    <FeedbackStatistics>
+  {totalFeedbacs === 0 ? <p>There is no feedback</p> : 
+    <> 
+   <FeedbackStatistics>
       <ul>Statistics</ul>
       <li>Good: {up}</li>
       <li>Neutral: {zero}</li>
@@ -16,6 +18,8 @@ const Statistics = ({ totalFeedbacks, positivePercentage, up, zero, down }) => (
         {positivePercentage}
       </p>
     </FeedbackResult>
+</>}
+ 
   </div>
 );
 
