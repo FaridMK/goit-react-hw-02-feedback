@@ -1,0 +1,16 @@
+.list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .btn {
+    width: 100px;
+    padding: 15px;
+    background-color: rgb(182, 211, 218);
+    font-size: 22px;
+    border-color: rgb(45, 46, 45);
+    border-radius: 4px;
+  }
